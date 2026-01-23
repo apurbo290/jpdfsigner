@@ -10,7 +10,7 @@ jobs:
   test:
     name: Build and Test
     runs-on: ubuntu-latest
-    container: amazoncorretto:21
+    container: amazoncorretto:25
 
     steps:
       # Install Git, wget, tar, and other dependencies

@@ -1,4 +1,4 @@
-FROM docker.io/maven:3.9.4-amazoncorretto-21 as builder
+FROM docker.io/maven:3.9.12-amazoncorretto-25 as builder
 
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY . .
 
 RUN mvn package
 
-FROM docker.io/amazoncorretto:21
+FROM docker.io/amazoncorretto:25
 
 WORKDIR /app
 
